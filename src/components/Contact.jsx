@@ -13,7 +13,7 @@ export default function Contact() {
         If you have a project in mind or just want to say hello, my inbox is always open.
       </p>
       <a href="mailto:fortuneemmanuel18@gmail.com" className={styles.emailBtn}>
-        Send Me an Email ↗
+        Send Me an Email
       </a>
       <div className={styles.socials}>
         <a href="https://www.linkedin.com/in/fortune-emmanuel-2a8b21235" target="_blank" rel="noopener noreferrer">
