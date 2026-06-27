@@ -1,14 +1,15 @@
 import styles from './Skills.module.css'
 
 const skills = [
-  { name: 'React', level: 75 },
-  { name: 'JavaScript', level: 78 },
-  { name: 'HTML & CSS', level: 90 },
+  { name: 'React', level: 90 },
+  { name: 'JavaScript', level: 88 },
+  { name: 'HTML & CSS', level: 93 },
   { name: 'CSS Modules', level: 82 },
-  { name: 'Vite', level: 70 },
+  { name: 'Vite', level: 90 },
   { name: 'Git & GitHub', level: 95 },
-  { name: 'Responsive Design', level: 80 },
-  { name: 'UI Design', level: 60 },
+  { name: 'Responsive Web Design', level: 87 },
+  { name: 'UI Design', level: 78 },
+  { name: 'Tailwind', level: 88 },
 ]
 
 export default function Skills() {

@@ -16,7 +16,7 @@ const projects = [
     title: 'Nexus',
     subtitle: 'Movie Streaming UI',
     desc: 'A responsive movie streaming platform UI built with HTML, CSS, and JavaScript. Features a cinematic dark-themed interface with dynamic content rendering and smooth user interactions.',
-    tags: ['HTML', 'CSS', 'JavaScript', 'Responsive Design'],
+    tags: ['HTML', 'CSS', 'JavaScript', 'Responsive Web Design'],
     live: 'https://movie-streaming-design.onrender.com',
     github: '#',
   },
