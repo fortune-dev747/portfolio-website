@@ -6,7 +6,8 @@
   justify-content: space-between;
   padding: 8rem 4rem 4rem;
   position: relative;
-  gap: 1.5rem; /* Changed from 4rem to small gap */
+  gap: 1.5rem;
+  /* Changed from 4rem to small gap */
 }
 
 .content {
@@ -18,21 +19,22 @@
 }
 
 .imageWrapper {
-  flex: 0 0 520px; /* Increased from 320px */
-  height: 600px; /* Increased from 400px */
-  border-radius: 4px;
+  flex: 0 0 520px;
+  height: 600px;
+  border-radius: 44px;
   overflow: hidden;
-  border: 1px solid var(--border);
-  background: var(--surface);
-  width: 520px; /* Increased from 400px */
+  width: 520px;
 }
 
 .image {
   width: 100%;
   height: 100%;
   object-position: top;
-  border-radius: 44px;
-  border: 2px solid;
+}
+
+.image:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s ease-in-out;
 }
 
 .tag {
@@ -56,8 +58,15 @@
 }
 
 @keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.3; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
 }
 
 .name {
@@ -162,24 +171,52 @@
 }
 
 @keyframes scrollLine {
-  0% { transform: scaleY(0); transform-origin: top; }
-  50% { transform: scaleY(1); transform-origin: top; }
-  51% { transform: scaleY(1); transform-origin: bottom; }
-  100% { transform: scaleY(0); transform-origin: bottom; }
+  0% {
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+
+  50% {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+
+  51% {
+    transform: scaleY(1);
+    transform-origin: bottom;
+  }
+
+  100% {
+    transform: scaleY(0);
+    transform-origin: bottom;
+  }
 }
 
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
     padding: 7rem 1.5rem 4rem;
-    gap: 2rem; /* Adjusted for mobile */
+    gap: 2rem;
+    /* Adjusted for mobile */
   }
+
   .imageWrapper {
-    width: 100%;
-    height: 400px; /* Slightly taller on mobile */
+    width: 80%;
+    height: 500px;
+    /* Adjusted for tablets */
     flex: 0 0 auto;
   }
+
   .scroll {
     left: 1.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .imageWrapper {
+    width: 100%;
+    height: 400px;
+    /* Slightly taller on mobile */
+    flex: 0 0 auto;
   }
 }
